@@ -11,7 +11,7 @@
   
       private final ScheduledExecutorService service;
   
-      public RSessionLogger() {
+      public ScheduledLogger() {
   
           final GenericKeyedObjectPool<Object, RSession> pool = getPool();
   
