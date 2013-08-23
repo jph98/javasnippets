@@ -15,7 +15,7 @@
   
           final GenericKeyedObjectPool<Object, RSession> pool = getPool();
   
-          service = Executors.newSingleThreadScheduledExecutor();
+          service = Executors.newScheduledThreadPool(1, createThreadFactory("MyPool"));
           final Runnable logSessionsTask = new Runnable() {
   
               @Override
@@ -32,6 +32,14 @@
           };
   
           service.scheduleAtFixedRate(logSessionsTask, 1, 10, TimeUnit.SECONDS);
+      }
+      
+      private ThreadFactory createThreadFactory(final String namePrefix) {
+        
+        return new ThreadFactoryBuilder().setNameFormat(namePrefix + "-%d")
+                .setDaemon(true)
+                .build();
+        
       }
   
       private GenericKeyedObjectPool<Object, RSession> getPool() {
