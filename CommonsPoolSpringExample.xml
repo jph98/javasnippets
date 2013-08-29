@@ -5,7 +5,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<!--  
 	<bean id="executablePool" class="org.apache.commons.pool.impl.GenericKeyedObjectPool">
 		  
 		<constructor-arg>
@@ -22,7 +21,7 @@
 		<property name="lifo" value="false"/>
 		<property name="minEvictableIdleTimeMillis" value="-1"/>		
 		
-	</bean>-->
+	</bean>
 	
 	
 
