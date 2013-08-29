@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!--  
+	<bean id="executablePool" class="org.apache.commons.pool.impl.GenericKeyedObjectPool">
+		  
+		<constructor-arg>
+			<bean id="executableObjectFactory" class="com.example.ObjectFactory">
+				<constructor-arg value="${command}"/>
+			</bean>
+		</constructor-arg>
+
+		<property name="testOnReturn" value="true" />
+		<property name="testOnBorrow" value="true" />
+		<property name="whenExhaustedAction" value="2" />
+		<property name="timeBetweenEvictionRunsMillis" value="10000"/>
+		<property name="minIdle" value="5"/>
+		<property name="lifo" value="false"/>
+		<property name="minEvictableIdleTimeMillis" value="-1"/>		
+		
+	</bean>-->
+	
+	
+
+</beans>
